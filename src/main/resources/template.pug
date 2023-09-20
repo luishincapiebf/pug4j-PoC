@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8" http-equiv="content-type")
+    style(type="text/css").
+      @import url(https://themes.googleusercontent.com/fonts/css?kit=1ZpBgFLQKwrA6c9iLOONVLLukJZ0tncL9DlcRrH6sPk);
+      // Add your CSS styles here
+
+  body.c15.c17.doc-content
+    p.c9
+        -  const l = logo;
+      img(src=l)
+    p.c4
+      span.c5
+    p.c4
+      span.c5
+    p.c9.c18
+      span.c5
+    p.c14
+      span.c5
+      if certificate.addressedTo
+        p.c14
+          span.c2 #{certificate.addressedTo}
+    p.c14.c18
+      span.c5
+    p.c14
+      span.c5 CERTIFIES
+    p.c8
+      span.c7.c2
+    p.c8
+      span.c7.c2
+    p.c8
+      span.c7.c2
+    p.c11
+      span.c0 #{employee.names}
+      span.c2 , identified with citizenship card No.
+      span.c0 #{employee.governmentId}
+      span.c2 &nbsp;is currently working in the company, performing the position of
+      span.c0 #{employee.position}
+      span.c2 &nbsp;since
+      span.c0 #{employee.startDate}
+      span.c2 &nbsp;with an indefinite term contract
+      if certificate.withSalary
+        span.c2 and earning a monthly salary of
+        span.c0 #{employee.salaryInLetters}
+        span.c2 &nbsp;M.L. $
+        span.c0 #{employee.salaryInNumbers}
+      span.c7.c2.
+    p.c8
+      span.c7.c2
+    p.c8
+      span.c7.c2
+    p.c10
+      span.c2 For the record of the foregoing was signed in Medellín on
+      span.c0 #{certificate.expeditionDate}
+      span.c7.c2.
+    p.c4(id="h.gjdgxs")
+      span.c7.c2
+    p.c19
+      span.c2.c7 Sincerely,
+    p.c1
+      span.c7.c2
+    p.c20
+        img(src=#{signer.signature})
+    p.c1
+      span.c12
+    p.c8
+      span.c12
+    p.c11
+      span.c3.c2 #{signer.name}
+    p.c11
+      span.c13 #{signer.position}
+    p.c11
+      span.c2.c15 #{signer.email}
